@@ -17,6 +17,11 @@
   font-weight: bold;
   font-size: 1.15rem; }
 
+.main-contacto form fieldset .div-fieldset .form-input, .main-contacto form fieldset .div-fieldset select, .main-contacto form fieldset .div-fieldset textarea {
+  border: 0;
+  padding: 0.5rem;
+  margin-top: 0.5rem; }
+
 /* ANIMACIONES DE TITULOS */
 .main-index .section-background div .scale-item {
   animation-name: scale-item;
@@ -314,16 +319,9 @@ main p {
       display: flex;
       flex-direction: column; }
       .main-contacto form fieldset .div-fieldset .form-input {
-        width: 90%;
-        border-color: white;
-        padding: 0.15rem 0.3rem; }
+        width: 90%; }
       .main-contacto form fieldset .div-fieldset select {
-        width: 55%;
-        border-color: white;
-        padding: 0.15rem; }
-      .main-contacto form fieldset .div-fieldset textarea {
-        border-color: white;
-        padding: 0.5rem; }
+        width: 55%; }
     .main-contacto form fieldset .btns-fieldset {
       display: flex;
       gap: 1.5rem;

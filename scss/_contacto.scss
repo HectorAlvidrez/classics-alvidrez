@@ -23,20 +23,19 @@
                 flex-direction: column;
 
                 .form-input{
+                    @extend %inputs-form;
                     width: 90%;
-                    border-color: white;
-                    padding: 0.15rem 0.3rem;
+                    
                 }
 
                 select{
+                    @extend %inputs-form;
                     width: 55%;
-                    border-color: white;
-                    padding: 0.15rem;
+                    
                 }
 
                 textarea{
-                    border-color: white;
-                    padding: 0.5rem;
+                    @extend %inputs-form;
                 }
             }
 
