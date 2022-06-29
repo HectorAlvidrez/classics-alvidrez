@@ -1,0 +1,23 @@
+
+// FLEX PARA TARJETAS DE PRODUCTOS
+
+@mixin flex-cards ($display, $direction, $align, $shadow, $width) {
+    display: $display;
+    flex-direction: $direction;
+    align-items: $align;
+    box-shadow: $shadow;
+    width: $width;
+}
+
+
+// FLEX SECIÓN INFO EN INDEX
+
+@mixin info-align ($align-items, $p-left, $p-right){
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: $align-items;
+    padding-left: $p-left;
+    padding-right: $p-right;
+}

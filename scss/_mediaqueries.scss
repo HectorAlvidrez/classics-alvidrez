@@ -1,0 +1,256 @@
+
+/* ----- MEDIA QUERIES INDEX ----- */
+
+@media screen and (min-width: 600px){
+    .main-index{
+        .section-background{
+            div{
+                padding: 7rem 4rem;
+
+                .index-sub{
+                    font-size: 1.35rem;
+                }
+
+                p{
+                    margin-top: 4rem;
+                }
+
+                .btn-primary{
+                    margin-top: 2rem;
+                }
+            }
+        }
+
+        .section-cards{
+            grid-area: section-cards;
+            margin-top: 3rem;
+
+            .cards{
+                width: 15rem !important;
+            }
+        }
+
+        .section-join{
+            padding: 2rem 2rem;
+            h3{
+                font-size: 2.7rem;
+                margin-bottom: 2rem;
+            }
+
+            p{
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 1024px){
+    .main-index{
+        display:grid;
+        grid-template-areas: "section-background section-background"
+        "section-info section-info"
+        "info-container info-container"
+        "section-join section-join"
+        "video-index video-index"
+        "section-cards section-cards";
+
+        .section-background{
+            grid-area: section-background;
+            div{
+                padding: 8rem 12rem;
+
+                h1{
+                    font-size: 4rem;
+                    line-height: 1.2;
+                    padding: 0 2rem;
+                }
+
+                .index-sub{
+                   font-size: 1.5rem; 
+                }
+
+                p{
+                    margin-top: 6rem;
+                }
+
+                .btn-primary{
+                    margin-top: 4rem;
+                }
+            }
+        }
+
+        .info-container{
+            .info-sub{
+                margin: 4rem;
+            }
+
+            .first-row{
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+
+                .img-left{
+                    width: 50%;
+                }
+    
+                .info-right{
+                    @include info-align (flex-start, 1.5rem, 5rem)
+                }
+            }
+    
+            .second-row{
+                display: flex;
+                flex-direction: row-reverse;
+                width: 100%;
+    
+                .info-left{
+                    @include info-align (flex-end, 5rem, 1.5rem)
+                }
+
+                .img-right{
+                    display: flex;
+                    flex-direction: column;
+                    width: 50%;
+                }
+            }
+        }
+
+        .section-join{
+            padding: 3rem 4rem;
+            h3{
+                font-size: 3.5rem;
+            }
+        }
+
+        .video-index{
+            grid-area: video-index;
+        }
+
+        .section-cards{
+            grid-area: section-cards;
+            margin: 3rem 0;
+
+            .cards{
+                width: 18rem !important;
+            }
+        }
+    }
+}
+
+
+
+/* ----- MEDIA QUERIES PAGE "NOSOTROS" ----- */
+
+@media screen and (min-width: 600px){
+    .main-nosotros{
+        .history-main{
+            text-align: left;
+            padding: 0rem 3rem;
+        }
+
+        .values-main{
+            text-align: left;
+            padding: 1.25rem 3rem;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .main-nosotros{
+        .section-main{
+            .nosotros-container{
+                display: flex;
+                flex-direction: row-reverse;
+                width: 100%;
+                align-items: center;
+
+                .img-nosotros{
+                    width: 50%;
+                }
+    
+                .nosotros-left{
+                    width: 50%;
+                    padding: 4rem;
+                }
+            }
+        }
+
+        .history-main{
+            margin: 3rem 0.5rem;
+            h3{
+                margin-bottom: 2rem;
+            }
+        }
+
+        .values-main{
+            h3{
+                margin: 2rem 0;
+            }
+
+            .h3-comunidad{
+                margin-top: 3rem;
+            }
+        }
+    }
+}
+
+
+
+/* ----- MEDIA QUERIES PAGE "CONTACTO" ----- */
+
+@media screen and (min-width:600px){
+    .main-contacto{
+        form{
+            fieldset{
+                .div-fieldset{
+                    .form-input{
+                        width: 75%;
+                    }
+
+                    select{
+                        width: 35%;
+                    }
+                }
+
+                .btns-fieldset{
+                    gap: 3rem;
+
+                    .form-button{
+                        width: 30%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1024px){
+    .main-contacto{
+        form{            
+            fieldset{
+                .div-fieldset{
+                    .form-input{
+                        width: 40%;
+                    }
+
+                    select{
+                        width: 18%;
+                    }
+
+                    textarea{
+                        width: 65%;
+                    }
+                }
+
+                .btns-fieldset{
+                    gap: 5rem;
+
+                    .form-button{
+                        width: 20%;
+                    }
+                }
+            }
+        }
+    }
+}

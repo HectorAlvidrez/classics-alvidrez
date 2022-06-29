@@ -1,0 +1,66 @@
+/* ESTILOS DE PAGE "NOSOTROS" */
+
+.main-nosotros{
+    display: grid;
+    grid-template-areas: "section-main"
+    "history-main"
+    "img-history"
+    "values-main";
+
+    .section-main{
+        grid-area: section-main;
+        color: white;
+        background-color: black;
+        text-align: center;
+        .nosotros-container{
+            .nosotros-left{
+                h1{
+                    color: white;
+                    margin-bottom: 0.5rem;
+                }
+            
+                h2{
+                    padding: 1rem 2rem;
+                    text-align: center;
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+
+    .history-main{
+        grid-area: history-main;
+        padding: 0 2rem;
+        margin: 0 0.5rem 1rem 0.5rem;
+        
+        h3{
+            margin-top: 2rem;
+        }
+    }
+
+    .img-history{
+        grid-area: img-history;
+    }
+    
+    .values-main{
+        grid-area: values-main;
+        margin: 0 0.5rem;
+        padding: 2rem;
+
+        h2{
+            padding: 0.5rem;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        
+        h3{
+            margin-top: 2rem;
+        }
+
+        .production-time{
+            .p-span{
+                @extend %span-p;
+            }
+        }
+    }
+}

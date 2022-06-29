@@ -1,0 +1,39 @@
+/* ESTILOS DE PAGE "SHOP" */
+
+.main-shop{
+    section{
+        .card-holder{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            .cards-shop{
+                margin-top: 1rem;
+                display: flex;
+                flex-direction: column;
+                width: 18rem;
+                align-items: center;
+
+                p{
+                    margin-top: 0rem;
+                }
+
+                .product-name{
+                    font-weight: bold;
+                }
+
+                a{
+                    .btn-primary{
+                        @extend %buttons;
+
+                        &:hover {
+                            background-color: black;
+                            border-color: black;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+/* ESTILOS DEL FOOTER */
+
+footer{
+    margin-top: 2rem;
+    background-color: black;
+    color: white;
+    padding: 3rem;
+    font-size: 0.85rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    .footer-socials{
+        text-align: center;
+        margin-top: 1rem;
+        .social-links{
+            display: flex;
+            justify-content: center;
+            a{
+                img{
+                    width: 45%;
+                }
+
+                .fb-img{
+                    width: 41%;
+                }
+            }
+        }
+    }
+}
+
+
+/* ----- MEDIA QUERIES PARA FOOTER ----- */
+@media screen and (min-width:1024px){
+    footer{
+        margin-top: 2rem;
+        background-color: black;
+        color: white;
+        padding: 3rem;
+        font-size: 0.85rem;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

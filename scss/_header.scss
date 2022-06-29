@@ -1,0 +1,103 @@
+/* ESTILOS DE HEADER Y MENU DE NAVEGACIÓN */
+
+header{
+    .envio-container{
+        background-color: black;
+        height: 2rem;
+
+        .envio-text{
+            font-size: 0.8rem;
+            text-align: center;
+            padding: 0.4rem;
+            color: white;
+        }
+    }
+
+    nav{
+        .container-fluid{
+            .brand-link{
+                margin-right: 1.7rem;
+                width: 24%;
+                .brand-logo{
+                    width: 100%;
+                }
+            }
+
+            .cart-link{
+                .shopping-icon{
+                    width: 22%;
+                    margin-left: 1rem;
+                }
+            }
+        }
+    }
+}
+
+
+/* ----- MEDIA QUERIES DE HEADER Y MENU ----- */
+
+@media screen and (min-width:600px){
+    header{
+        .envio-container{
+            .envio-text{
+                font-size: 0.9rem;
+                letter-spacing: 0.1rem;
+            }
+        }
+        
+        nav{
+            .container-fluid{
+                .brand-link{
+                    width: 24%;
+                    .brand-logo{
+                        width: 100%;
+                    }
+                }
+    
+                .cart-link{
+                    .shopping-icon{
+                        width: 25.5%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 992px){
+    header{
+        nav{
+            .container-fluid{
+                flex-direction: column;
+                .brand-link{
+                    margin-right: 0;
+                    width: 22%;
+                    .brand-logo{
+                        width: 100%;
+                    }
+                }
+    
+                .cart-link{
+                    .shopping-icon{
+                        width: 24.5%;
+
+                        &:hover{
+                            transition: 0.2s;
+                            width: 27%;
+                        }
+                    }
+                }
+
+                .navbar-collapse{
+                    ul{
+                        li{
+                            margin: 0 2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,61 @@
+/* ESTILOS DE PAGE "CONTACTO" */
+
+.main-contacto{
+    padding: 0 2rem;
+    section{
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    form{
+        fieldset{
+            background-color: $beige-secundario;
+            padding: 1rem;
+
+            legend{
+                margin-bottom: 1.3rem;
+                font-size: 1.15rem;
+            }
+
+            .div-fieldset{
+                margin-top: 1rem;
+                display: flex;
+                flex-direction: column;
+
+                .form-input{
+                    width: 90%;
+                    border-color: white;
+                    padding: 0.15rem 0.3rem;
+                }
+
+                select{
+                    width: 55%;
+                    border-color: white;
+                    padding: 0.15rem;
+                }
+
+                textarea{
+                    border-color: white;
+                    padding: 0.5rem;
+                }
+            }
+
+            .btns-fieldset{
+                display: flex;
+                gap: 1.5rem;
+                justify-content: center;
+                margin-top: 1.5rem;
+                .form-button{
+                    @extend %buttons;
+                    width: 40%;
+                    border: 0;
+
+                    &:hover {
+                        background-color: black;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}

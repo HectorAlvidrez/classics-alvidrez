@@ -1,0 +1,19 @@
+
+// ESTILO DE BOTONES
+
+%buttons{
+    margin-top: 1rem;
+    margin-bottom: 1.8rem;
+    background-color: $verde-principal;
+    border-color: $verde-principal;
+    color: white;
+}
+
+
+// ESTILO DE SPAN EN PÁRRAFOS
+
+%span-p{
+    color: $verde-secundario;
+    font-weight: bold;
+    font-size: 1.15rem;
+}

@@ -1,0 +1,222 @@
+/* RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+// IMPORTS
+@import "utilities/variables";
+@import "utilities/extends";
+@import "animations";
+@import "utilities/mixin";
+@import "header";
+@import "footer";
+
+
+
+/* ESTILOS DE ELEMENTOS GENERALES */
+
+body{
+    font-family: $font-principal;
+    line-height: 1.5;
+    letter-spacing: 0.04rem;
+}
+
+img{
+    width: 100%;
+}
+
+main{
+    h1{
+        text-align: center;
+        font-size: 2.5rem;
+        color: white;
+        font-weight: bold;
+    }
+
+    .title-pages{
+        color: black;
+        margin: 2rem 0;
+        font-size: 2rem;
+    }
+
+    h2{
+        font-weight: bold;
+    }
+
+    h3{
+        margin: 1rem 0;
+        font-weight: bold;
+        color: $verde-principal;
+    }
+
+    h4{
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
+    p{
+        margin: 1rem 0;
+    }
+}
+
+
+
+/* ESTILOS DE INDEX */
+
+.main-index{
+    display: grid;
+    grid-template-areas: "section-background"
+    "section-cards"
+    "info-container"
+    "section-join"
+    "video-index";
+
+    .section-background{
+        grid-area: section-background;
+        background-image: url(../img/main-background.png);
+        padding: 2.6rem 3.5rem;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: white;
+
+        div{
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            align-items: center;
+            text-align: center;
+
+            .index-sub{
+                font-size: 1.2rem;
+                letter-spacing: 0.15rem;
+            }
+
+            .btn-primary{
+                @extend %buttons;
+                padding: 0.7rem 2rem;
+
+                &:hover {
+                    background-color: black;
+                    border-color: black;
+                    color: white;
+                }
+            }
+
+        }
+    }
+
+    .section-cards{
+        grid-area: section-cards;
+        margin-top: 2rem;
+        padding: 0 2rem;
+        text-align: center;
+
+        .card-holder{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin: 2rem 0;
+
+            .cards{
+                @include flex-cards (flex, column, left, 0 0.25rem 0.5rem grey, 12rem);
+
+                &:hover {
+                    box-shadow: 0 0.7rem 1.2rem 0 grey;
+                    transition: 0.5s;
+                    transform:scale(1.04)
+                }
+
+                a{
+                .btn {
+                    @extend %buttons;
+
+                    &:hover {
+                        background-color: black;
+                        border-color: black;
+                        color: white;
+                    }
+                }
+                }
+            }
+        }
+    }
+
+    .info-container{
+        grid-area: info-container;
+
+        .info-sub{
+            text-align: center;
+            margin: 2rem;
+        }
+
+        .first-row{
+            display: flex;
+            flex-direction: column;
+
+            .info-right{
+                padding: 0 2rem;
+                text-align: left;
+
+                .p-span{
+                    @extend %span-p;
+                }
+            }
+        }
+
+        .second-row{
+            display: flex;
+            flex-direction: column;
+
+            .info-left{
+                padding: 0 2rem;
+                text-align: right;
+
+                .p-span{
+                    @extend %span-p;
+                }
+            }
+        }
+    }
+
+    .section-join{
+        grid-area: section-join;
+        background-color: $beige-principal;
+        text-align: center;
+        padding: 2rem 1rem;
+        margin: 2rem 0rem;
+
+        h3{
+            font-size: 2rem;
+            margin: 0;
+            color: $gris-complement;
+        }
+
+        a{
+            text-decoration: none;
+            letter-spacing: 0.3rem;
+            color: $gris-complement;
+            font-weight: bold;
+        }
+    }
+
+    .video-index{
+        grid-area: video-index;
+    }
+}
+
+
+// IMPORTS DE PAGES SECUNDARIAS
+@import "shop";
+@import "nosotros";
+@import "contacto";
+@import "carrito";
+
+
+// IMPORT DE MEDIA QUERIES
+@import "mediaqueries";

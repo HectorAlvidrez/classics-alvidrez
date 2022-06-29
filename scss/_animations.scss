@@ -1,0 +1,36 @@
+
+/* ANIMACIONES DE TITULOS */
+
+.main-index{
+    .section-background{
+        div{
+            .scale-item{
+                animation-name: scale-item;
+                animation-timing-function: linear;
+                animation-duration: 1s;
+            }
+        }
+    }
+}
+
+.main-nosotros{
+    .section-main{
+        .nosotros-container{
+            .scale-item{
+                animation-name: scale-item;
+                animation-timing-function: linear;
+                animation-duration: 1s;
+            }
+        }
+    }
+}
+
+@keyframes scale-item{
+    from{
+        transform: scale(0.5);
+    }
+
+    to{
+        transform: scale(1);
+    }
+}
