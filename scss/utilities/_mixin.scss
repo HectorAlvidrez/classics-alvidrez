@@ -1,12 +1,11 @@
 
 // FLEX PARA TARJETAS DE PRODUCTOS
 
-@mixin flex-cards ($display, $direction, $align, $shadow, $width) {
+@mixin flex-cards ($display, $direction, $align, $shadow) {
     display: $display;
     flex-direction: $direction;
     align-items: $align;
     box-shadow: $shadow;
-    width: $width;
 }
 
 

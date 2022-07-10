@@ -124,7 +124,8 @@ main{
             margin: 2rem 0;
 
             .cards{
-                @include flex-cards (flex, column, left, 0 0.25rem 0.5rem grey, 12rem);
+                @include flex-cards (flex, column, left, 0 0.25rem 0.5rem grey);
+                width: 12rem;
 
                 &:hover {
                     box-shadow: 0 0.7rem 1.2rem 0 grey;

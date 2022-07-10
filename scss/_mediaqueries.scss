@@ -26,7 +26,7 @@
             margin-top: 3rem;
 
             .cards{
-                width: 15rem !important;
+                width: 14rem !important;
             }
         }
 
@@ -51,9 +51,9 @@
         grid-template-areas: "section-background section-background"
         "section-info section-info"
         "info-container info-container"
+        "section-cards section-cards"
         "section-join section-join"
-        "video-index video-index"
-        "section-cards section-cards";
+        "video-index video-index";
 
         .section-background{
             grid-area: section-background;
@@ -132,7 +132,7 @@
             margin: 3rem 0;
 
             .cards{
-                width: 18rem !important;
+                width: 16rem !important;
             }
         }
     }
