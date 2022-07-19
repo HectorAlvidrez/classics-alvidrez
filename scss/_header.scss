@@ -15,18 +15,20 @@ header{
 
     nav{
         .container-fluid{
-            .brand-link{
-                margin-right: 1.7rem;
-                width: 24%;
-                .brand-logo{
-                    width: 100%;
+            .links-container{
+                width: 100%;
+                .cart-link{
+                    .shopping-icon{
+                        margin-left: 0.8rem;
+                        width: 47%;
+                    }
                 }
-            }
 
-            .cart-link{
-                .shopping-icon{
-                    width: 22%;
-                    margin-left: 1rem;
+                .brand-link{
+                    .brand-logo{
+                        margin: 0 auto;
+                        width: 30%;
+                    }
                 }
             }
         }
@@ -47,16 +49,19 @@ header{
         
         nav{
             .container-fluid{
-                .brand-link{
-                    width: 24%;
-                    .brand-logo{
-                        width: 100%;
+                .links-container{
+                    .cart-link{
+                        .shopping-icon{
+                            margin-left: 0.8rem;
+                            width: 36%;
+                        }
                     }
-                }
     
-                .cart-link{
-                    .shopping-icon{
-                        width: 25.5%;
+                    .brand-link{
+                        .brand-logo{
+                            margin: 0 auto;
+                            width: 28%;
+                        }
                     }
                 }
             }
@@ -70,21 +75,11 @@ header{
         nav{
             .container-fluid{
                 flex-direction: column;
-                .brand-link{
-                    margin-right: 0;
-                    width: 22%;
-                    .brand-logo{
-                        width: 100%;
-                    }
-                }
-    
-                .cart-link{
-                    .shopping-icon{
-                        width: 24.5%;
-
-                        &:hover{
-                            transition: 0.2s;
-                            width: 27%;
+                .links-container{
+                    flex-direction: column;
+                    .brand-link{
+                        .brand-logo{
+                            width: 50%;
                         }
                     }
                 }
@@ -93,6 +88,23 @@ header{
                     ul{
                         li{
                             margin: 0 2rem;
+
+                            &:hover{
+                                font-weight: bold;
+                            }
+                        }
+
+                        .list-cart-link{
+                            .cart-link{
+                                .shopping-icon{
+                                    width: 25%;
+
+                                    &:hover{
+                                        transition: 0.35s;
+                                        width: 32%;
+                                    }
+                                }
+                            }
                         }
                     }
                 }
