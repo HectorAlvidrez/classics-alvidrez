@@ -8,9 +8,9 @@
 .main-index .section-background div .btn-primary, .main-index .section-cards .card-holder .cards a .btn, .main-shop section .card-holder .cards-shop a .btn-primary, .main-contacto form fieldset .btns-fieldset .form-button, .container .row a .btn-primary {
   margin-top: 1rem;
   margin-bottom: 1.8rem;
-  background-color: #41504D;
-  border-color: #41504D;
-  color: white; }
+  background-color: white;
+  border-color: black;
+  color: black; }
 
 .main-index .info-container .first-row .info-right .p-span, .main-index .info-container .second-row .info-left .p-span, .main-nosotros .values-main .production-time .p-span {
   color: #708883;
@@ -41,18 +41,17 @@
 
 /* ESTILOS DE HEADER Y MENU DE NAVEGACIÓN */
 header .envio-container {
-  background-color: black;
+  background-color: greenyellow;
   height: 2rem; }
   header .envio-container .envio-text {
     font-size: 0.8rem;
     text-align: center;
-    padding: 0.4rem;
-    color: white; }
+    padding: 0.4rem; }
 
 header nav .container-fluid .links-container {
   width: 100%; }
   header nav .container-fluid .links-container .cart-link .shopping-icon {
-    margin-left: 0.8rem;
+    margin-left: 0.5rem;
     width: 47%; }
   header nav .container-fluid .links-container .brand-link .brand-logo {
     margin: 0 auto;
@@ -167,7 +166,6 @@ main p {
     grid-area: section-background;
     background-image: url(../img/main-background.png);
     padding: 2.6rem 3.5rem;
-    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     color: white; }
